@@ -24,7 +24,89 @@
 
     <section id="form">
       <h2>报名表单</h2>
-      <!-- 表单下一步填在这里 -->
+      <form action="#" method="get">
+        <p>
+          <label for="realname">真实姓名</label>
+          <input type="text" id="realname" name="realname" required>
+        </p>
+
+        <p>性别</p>
+        <p>
+          <label><input type="radio" name="gender" value="male" checked> 男</label>
+          <label><input type="radio" name="gender" value="female"> 女</label>
+        </p>
+
+        <p>
+          <label for="school">所在学校</label>
+          <input type="text" id="school" name="school" placeholder="如：云南大学" required>
+        </p>
+
+        <p>
+          <label for="grade">年级</label>
+          <select id="grade" name="grade">
+            <option value="">请选择年级</option>
+            <option value="1">大一</option>
+            <option value="2">大二</option>
+            <option value="3">大三</option>
+            <option value="4">大四</option>
+            <option value="5">研究生</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="studentid">学号</label>
+          <input type="text" id="studentid" name="studentid" pattern="[0-9]{10,13}" placeholder="10-13位纯数字" required>
+        </p>
+
+        <p>
+          <label for="qq">QQ号</label>
+          <input type="number" id="qq" name="qq" min="10000" required>
+        </p>
+
+        <p>
+          <label for="rank">游戏当前段位</label>
+          <select id="rank" name="rank">
+            <option value="">请选择段位</option>
+            <option value="genin">下忍</option>
+            <option value="chunin">中忍</option>
+            <option value="jonin">上忍</option>
+            <option value="anbu">暗部</option>
+            <option value="kage">影</option>
+            <option value="superkage">超影</option>
+          </select>
+        </p>
+
+        <p>擅长首发阵容（请填写具体忍者名）</p>
+        <p>
+          <label for="ninja1">一号位：</label>
+          <input type="text" id="ninja1" name="ninja1" required>
+        </p>
+        <p>
+          <label for="ninja2">二号位：</label>
+          <input type="text" id="ninja2" name="ninja2" required>
+        </p>
+        <p>
+          <label for="ninja3">三号位：</label>
+          <input type="text" id="ninja3" name="ninja3" required>
+        </p>
+
+        <p>常备比赛设备（可多选）</p>
+        <p>
+          <label><input type="checkbox" name="device" value="phone"> 手机</label>
+          <label><input type="checkbox" name="device" value="pad"> 平板电脑</label>
+          <label><input type="checkbox" name="device" value="emulator"> 模拟器</label>
+        </p>
+
+        <p>
+          <label for="screenshot">上传段位截图 (选填)</label>
+          <input type="file" id="screenshot" name="screenshot">
+        </p>
+
+        <p>
+          <button type="submit">提交报名</button>
+          <button type="reset">重置表单</button>
+        </p>
+      </form>
     </section>
   </main>
 
