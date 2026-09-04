@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2026 火影忍者高校大赛报名</title>
-  <!-- 引入外部样式表，确保路径和你的文件夹结构一致 -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,9 +18,13 @@
   </nav>
 
   <main>
-    <section id="rules">
+   <section id="rules">
       <h2>赛事说明</h2>
-      <p>本次比赛为纯个人赛，考验选手的忍者池深度与临场反应。请务必填写真实的高校信息。</p>
+      <details open>
+        <summary>点击收起 / 查看详细规则</summary>
+        <p>本次比赛为纯个人赛，考验选手的忍者池深度与临场反应。请务必填写真实的高校信息。</p>
+        <p>注：比赛期间严禁使用第三方辅助脚本，一经发现取消学期评优资格。</p>
+      </details>
     </section>
 
     <section id="form">
@@ -93,11 +96,12 @@
         </p>
 
         <p>常备比赛设备（可多选）</p>
-        <p>
+        <fieldset>
+          <legend>常备比赛设备（可多选）</legend>
           <label><input type="checkbox" name="device" value="phone"> 手机</label>
           <label><input type="checkbox" name="device" value="pad"> 平板电脑</label>
           <label><input type="checkbox" name="device" value="emulator"> 模拟器</label>
-        </p>
+        </fieldset>
 
         <p>
           <label for="screenshot">上传段位截图 (选填)</label>
